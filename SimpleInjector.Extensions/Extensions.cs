@@ -9,11 +9,11 @@ namespace SimpleInjector.Extensions
         {
             var types = assembly
                 .GetTypes()
-                .Where(type => type.GetCustomAttributes(typeof(Attributes.DependencyInjectionAttribute), true).Length > 0);
+                .Where(type => type.GetCustomAttributes(typeof(DependencyInjectionAttribute), true).Length > 0);
 
             foreach (var implementationType in types)
             {
-                var attrib = implementationType.GetCustomAttributes<Attributes.DependencyInjectionAttribute>().First();
+                var attrib = implementationType.GetCustomAttributes<DependencyInjectionAttribute>().First();
                 container.Register(attrib.InterfaceType, implementationType, lifestyle);
             }
         }
