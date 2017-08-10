@@ -2,6 +2,9 @@
 bin
 obj
 
+# Nuget Packages
+*.nupkg
+
 # mstest test results
 TestResults
 ## Ignore Visual Studio temporary files, build results, and
