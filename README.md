@@ -32,6 +32,5 @@ Current Container Extensions:
       
     Register using the container extension function (the assembly must be the assembly of the classes(implementations)):
     
-      // the assembly must be the assembly of the classes(implementations 
-      // implementations(classes) and contracts(interfaces) can be in different assemblies. Only implementations assemblies must be informed
+      // implementations(classes) and contracts(interfaces) can be in different assemblies. Only implementation assemblies must be informed
       container.RegisterImplementationsFromAssembly(assembly, Lifestyle.Scoped);
