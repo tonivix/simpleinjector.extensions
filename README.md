@@ -13,6 +13,7 @@ Current Container Extensions:
       // and the list goes on...
 
     RegisterImplementationsFromAssembly is a feature that brings the easiness of automatically registering types for an entire assembly.
+    Everything is done by reflection. All classes(implementations) are related to contracts(interfaces) by using the 'DependencyInjection' decorator.
     
     Usage:
 
