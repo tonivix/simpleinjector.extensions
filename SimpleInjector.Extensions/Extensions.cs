@@ -5,7 +5,7 @@ namespace SimpleInjector.Extensions
 {
     public static class Extensions
     {
-        public static void RegisterAllImplementationsFromAssembly(this Container container, Assembly assembly, Lifestyle lifestyle)
+        public static void RegisterImplementationsFromAssembly(this Container container, Assembly assembly, Lifestyle lifestyle)
         {
             var types = assembly
                 .GetTypes()
