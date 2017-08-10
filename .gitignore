@@ -123,3 +123,19 @@ Desktop.ini
 **/packages/OctoPack*/license.txt
 **/packages/OctoPack*/tools/Install.ps1
 **/packages/OctoPack*/tools/Uninstall.ps1
+
+#Ignore thumbnails created by Windows
+#Ignore files built by Visual Studio
+*.exe
+*.bak
+*.cache
+*.log
+[Dd]ebug*/
+*.lib
+obj/
+[Rr]elease*/
+_ReSharper*/
+[Tt]est[Rr]esult*
+.vs/
+#Nuget packages folder
+packages/
