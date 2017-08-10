@@ -9,8 +9,8 @@ Batch or automatic registration is a way of registering a set of (related) types
       container.Register<IProductRepository, SqlProductRepository>();
       // and the list goes on...
 
-    'RegisterByAttribute' and 'RegisterByConvention' are features that bring the easiness of automatically registering types for an entire assembly.
-    Everything is done by reflection. 
+'RegisterByAttribute' and 'RegisterByConvention' are features that bring the easiness of automatically registering types for an entire assembly.
+Everything is done by reflection. 
 
 Current Container Extensions:
 - RegisterByAttribute
@@ -50,3 +50,7 @@ Current Container Extensions:
       // Register using the container extension function (the assembly must be the assembly of the classes(implementations)):
     
       container.RegisterByConvention(assembly, Lifestyle.Scoped);
+
+Instalation:
+	Package available on Nuget Package Manager. 
+	https://www.nuget.org/packages/RTI.SimpleInjector.Extensions/
