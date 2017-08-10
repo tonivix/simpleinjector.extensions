@@ -1,0 +1,7 @@
+T:\RTI\Projetos\SimpleInjector.Extensions\SimpleInjector.Extensions\bin\Debug\SimpleInjector.Extensions.dll
+T:\RTI\Projetos\SimpleInjector.Extensions\SimpleInjector.Extensions\bin\Debug\SimpleInjector.Extensions.pdb
+T:\RTI\Projetos\SimpleInjector.Extensions\SimpleInjector.Extensions\bin\Debug\SimpleInjector.dll
+T:\RTI\Projetos\SimpleInjector.Extensions\SimpleInjector.Extensions\bin\Debug\SimpleInjector.xml
+T:\RTI\Projetos\SimpleInjector.Extensions\SimpleInjector.Extensions\obj\Debug\SimpleInjector.Extensions.csprojResolveAssemblyReference.cache
+T:\RTI\Projetos\SimpleInjector.Extensions\SimpleInjector.Extensions\obj\Debug\SimpleInjector.Extensions.dll
+T:\RTI\Projetos\SimpleInjector.Extensions\SimpleInjector.Extensions\obj\Debug\SimpleInjector.Extensions.pdb
