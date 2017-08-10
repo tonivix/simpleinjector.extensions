@@ -9,7 +9,7 @@
     <projectUrl>https://github.com/tonivix/simpleinjector.extensions</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Simple Injector Extensions</description>
-    <releaseNotes>First Edition.</releaseNotes>
+    <releaseNotes>Minor Bux Fixes</releaseNotes>
     <copyright>Copyright 2017</copyright>
     <tags>simpleinjector IoC</tags>
     <dependencies>
@@ -17,7 +17,7 @@
     </dependencies>
   </metadata>
   <files>
-    <file src="bin\Release\RTI.SimpleInjector.Extensions.dll" target="lib\RTI.SimpleInjector.Extensions.dll"/>
+    <file src="bin\Release\RTI.SimpleInjector.Extensions.dll" target="lib\SimpleInjector.Extensions.dll"/>
   </files>
 </package>
 
