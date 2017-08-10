@@ -7,7 +7,7 @@
     <ProjectGuid>{BD499D71-FB9E-4CD9-A690-4AC3575DE0FD}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>SimpleInjector.Extensions</RootNamespace>
+    <RootNamespace>RTI.SimpleInjector.Extensions</RootNamespace>
     <AssemblyName>RTI.SimpleInjector.Extensions</AssemblyName>
     <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>

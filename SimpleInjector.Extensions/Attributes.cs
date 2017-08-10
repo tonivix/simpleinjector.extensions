@@ -1,6 +1,6 @@
 using System;
 
-namespace SimpleInjector.Extensions
+namespace RTI.SimpleInjector.Extensions
 {
     [AttributeUsage(AttributeTargets.Class)]
     public class DependencyInjectionAttribute : Attribute

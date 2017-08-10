@@ -1,7 +1,8 @@
 ﻿using System.Linq;
 using System.Reflection;
+using SimpleInjector;
 
-namespace SimpleInjector.Extensions
+namespace RTI.SimpleInjector.Extensions
 {
     public static class Extensions
     {

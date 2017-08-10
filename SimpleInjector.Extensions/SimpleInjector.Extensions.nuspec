@@ -17,7 +17,7 @@
     </dependencies>
   </metadata>
   <files>
-    <file src="bin\Release\RTI.SimpleInjector.Extensions.dll" target="lib\SimpleInjector.Extensions.dll"/>
+    <file src="bin\Release\RTI.SimpleInjector.Extensions.dll" target="lib\RTI.SimpleInjector.Extensions.dll"/>
   </files>
 </package>
 
