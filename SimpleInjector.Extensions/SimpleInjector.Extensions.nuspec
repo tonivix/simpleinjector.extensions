@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>$id$</id>
+    <version>$version$</version>
+    <authors>Toni Rossmann</authors>
+    <owners>Toni Rossmann</owners>
+    <licenseUrl>https://github.com/tonivix/simpleinjector.extensions/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/tonivix/simpleinjector.extensions</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Simple Injector Extensions</description>
+    <releaseNotes>First Edition.</releaseNotes>
+    <copyright>Copyright 2017</copyright>
+    <tags>simpleinjector IoC</tags>
+    <dependencies>
+      <dependency id="SimpleInjector" version="4.0.8" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="bin\Release\RTI.SimpleInjector.Extensions.dll" target="lib\RTI.SimpleInjector.Extensions.dll"/>
+  </files>
+</package>
+
