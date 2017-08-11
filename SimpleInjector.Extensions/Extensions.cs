@@ -12,7 +12,7 @@ namespace RTI.SimpleInjector.Extensions
 
         private static IEnumerable<Type> FilterTypesByNamespace(IEnumerable<Type> types, string[] namespaceFilter)
         {
-            return types.Where(t => namespaceFilter.Any(n => t.Namespace.StartsWith(n)));
+            return types.Where(t => namespaceFilter.Any(n => t.Namespace == n));
         }
 
         #endregion
