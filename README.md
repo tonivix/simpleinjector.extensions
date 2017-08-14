@@ -53,7 +53,8 @@ public class ProductService : IProductService
 container.RegisterByConvention(assembly, Lifestyle.Scoped);
 ```
 
-# Filter by namespace
+**Filter by namespace**
+
 There is an optional parameter which registration can be filtered by one ore multiple namespaces:
 
 ```
