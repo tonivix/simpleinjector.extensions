@@ -53,6 +53,14 @@ public class ProductService : IProductService
 container.RegisterByConvention(assembly, Lifestyle.Scoped);
 ```
 
+# Filter by namespace
+There is an optional parameter which registration can be filtered by one ore multiple namespaces:
+
+```
+// Filters 
+container.RegisterByConvention(assembly, Lifestyle.Scoped, namespace1, namespace2);
+```
+
 # Instalation:
 
 Package available on [Nuget Package Manager](https://www.nuget.org/packages/RTI.SimpleInjector.Extensions/). 
