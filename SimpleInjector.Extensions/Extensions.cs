@@ -1,24 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using System.Linq;
 using System.Reflection;
+using RTI.SimpleInjector.Extensions.Helpers;
 using SimpleInjector;
 
 namespace RTI.SimpleInjector.Extensions
 {
     public static class Extensions
     {
-        #region Private Methods
-
-        private static IEnumerable<Type> FilterTypesByNamespace(IEnumerable<Type> types, string[] namespaceFilter)
-        {
-            return types.Where(t => namespaceFilter.Any(n => t.Namespace == n));
-        }
-
-        #endregion
-
-        #region Public Methods
-
         /// <summary>
         ///     Registers Services to Implementations using reflection based on the attribute 'DependencyInjection'
         /// </summary>
@@ -28,15 +16,12 @@ namespace RTI.SimpleInjector.Extensions
         /// <param name="namespaceFilter">Optionally filter types by one or more namespaces</param>
         public static void RegisterByAttribute(this Container container, Assembly assembly, Lifestyle lifestyle, params string[] namespaceFilter)
         {
-            var types = assembly.GetTypes().Where(type => type.GetCustomAttributes(typeof(DependencyInjectionAttribute), true).Length > 0);
+            var types = Reflection.GetServicesInAssemblyByAttribute<DependencyInjectionAttribute>(assembly, namespaceFilter);
 
-            if (namespaceFilter.Length > 0)
-                types = FilterTypesByNamespace(types, namespaceFilter);
-
-            foreach (var implementationType in types)
+            foreach (var type in types)
             {
-                var attrib = implementationType.GetCustomAttributes<DependencyInjectionAttribute>().First();
-                container.Register(attrib.InterfaceType, implementationType, lifestyle);
+                var attrib = type.GetCustomAttributes<DependencyInjectionAttribute>().First();
+                container.Register(attrib.InterfaceType, type, lifestyle);
             }
         }
 
@@ -50,15 +35,11 @@ namespace RTI.SimpleInjector.Extensions
         /// <param name="namespaceFilter">Optionally filter types by one or more namespaces</param>
         public static void RegisterByConvention(this Container container, Assembly assembly, Lifestyle lifestyle, params string[] namespaceFilter)
         {
-            var types = assembly.GetTypes().Where(type => type.GetInterface($"I{type.Name}") != null);
+            var types = Reflection.GetTypesInAssembly(assembly,
+                type => type.GetInterface($"I{type.Name}") != null, namespaceFilter);
 
-            if (namespaceFilter.Length > 0)
-                types = FilterTypesByNamespace(types, namespaceFilter);
-
-            foreach (var implementationType in types)
-                container.Register(implementationType.GetInterface($"I{implementationType.Name}"), implementationType, lifestyle);
+            foreach (var type in types)
+                container.Register(type.GetInterface($"I{type.Name}"), type, lifestyle);
         }
-
-        #endregion
     }
 }
