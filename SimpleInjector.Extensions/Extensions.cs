@@ -27,7 +27,7 @@ namespace RTI.SimpleInjector.Extensions
 
         /// <summary>
         ///     Registers Services to Implementations using reflection based on 'Convention over Configuration'
-        ///     (the naming convention is: '[Classname] : I[Classname]'. Ex: 'class UserService : IUserService')
+        ///     (the naming convention is: '[Classname] : I[Classname]' e.g: 'class UserService : IUserService')
         /// </summary>
         /// <param name="container">The SimpleInjector Container</param>
         /// <param name="assembly">The assembly where the implementations are defined</param>
